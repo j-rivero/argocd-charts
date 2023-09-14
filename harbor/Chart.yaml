@@ -1,0 +1,11 @@
+apiVersion: v2
+name: rmf-harbor
+description: A Helm to configure the harbor in RMF server deployments
+type: application
+version: 0.1.0
+
+# Chart harbor version 1.6.0 is harbor 2.2.0
+dependencies:
+- name: harbor
+  version: 1.6.0
+  repository: https://helm.goharbor.io
